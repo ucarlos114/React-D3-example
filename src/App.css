@@ -1,0 +1,114 @@
+/* Carlos Urbina 4/7/23 */
+
+html {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 5px;
+}
+
+#root {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#mainPage {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: maroon;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#d3 {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  grid-column: 1 / 2;
+}
+
+#datagrid {
+  background-color :white;
+  grid-column: 2 / 3;
+}
+
+#scatterDiv {
+  background-color: darkgray;
+  border: solid 3px black;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 60%;
+  justify-content: center;
+  align-items: center;
+}
+
+#pieBar {
+  margin: 0 2%;
+  flex: 0 0 38%;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 4%;
+}
+
+#pie {
+  grid-column: 1 / 2;
+}
+
+#info {
+  grid-column: 2 / 3;
+  text-align: center;
+  margin: 10px;
+}
+
+#hist {
+  grid-column: 2 / 3;
+}
+
+.gridElement {
+  background-color: darkgray;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 3px black;
+}
+
+.titleElement {
+  margin: 0 0 4px 0
+}
+
+.popup {
+  position: absolute;
+  color: white;
+  background-color: lightcoral;
+  border: solid 2px black;
+  border-radius: 2px;
+  padding: 3px;
+}
+
+.y.axis-grid line {
+  stroke: #0000003b;
+  stroke-dasharray: 6 6; /* dash pattern */
+}
